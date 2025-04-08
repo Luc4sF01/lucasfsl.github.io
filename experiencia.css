@@ -1,6 +1,6 @@
 .experiencia{
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 60px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -13,7 +13,7 @@
   line-height: 1.33;
   margin-bottom: 60px;
   color: #814BFF;
-  max-width: 40ch;
+  max-width: 50ch;
   font-weight: 550;
 }
 

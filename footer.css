@@ -28,6 +28,7 @@ list-style: none;
   text-decoration: none;
   color: #814BFF;
   list-style: none;
+  text-decoration: underline;
 }
 .footer-contato a:hover{
   color: #33108d;
