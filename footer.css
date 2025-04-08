@@ -1,0 +1,68 @@
+.footer-container{
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto{
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  color: #814BFF;
+  font-weight: 550;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-contato li{
+  font-weight: bold;
+  line-height: 1,1;
+  color: #814BFF;
+  font-size: 2.25rem;
+margin-bottom: 20px;
+list-style: none;
+}
+.footer-contato a{
+  text-decoration: none;
+  color: #814BFF;
+  list-style: none;
+}
+.footer-contato a:hover{
+  color: #33108d;
+  text-decoration: underline;
+ 
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Empilha os elementos em uma única coluna */
+    gap: 40px;               /* Reduz o espaçamento vertical */
+    text-align: center;      /* Centraliza o conteúdo */
+  }
+  
+  .footer-texto {
+    margin-bottom: 40px;
+    font-size: 1.75rem;      /* Diminui a fonte para melhor adaptação */
+  }
+  
+  .footer-contato li {
+    font-size: 1.75rem;      /* Reduz o tamanho dos itens de contato */
+  }
+}
+
+/* Responsividade para telas menores, até 500px */
+@media (max-width: 500px) {
+  .footer-container {
+    padding: 80px 20px 40px 20px; /* Reduz os espaçamentos do container */
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+  }
+  
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
