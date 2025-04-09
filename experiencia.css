@@ -1,3 +1,14 @@
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 2s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .experiencia{
   max-width: 1200px;
   padding: 60px 20px;

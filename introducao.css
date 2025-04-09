@@ -1,3 +1,15 @@
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.8s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .introducao {
   max-width: 1200px;
   padding: 40px 20px;
@@ -29,13 +41,29 @@
 }
 
 .texto h1 {
-  background: linear-gradient(180deg, #2D0390, #9263FF);
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #7f00ff, #790888, #d868e2, #7f00ff);
+  background-size: 800% 800%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: animateGradient 6s ease infinite;
   font-size: 4.5rem;
   line-height: 1.125;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 1000px) {
