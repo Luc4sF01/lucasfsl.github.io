@@ -74,37 +74,42 @@
 
 @media (max-width: 800px) {
   .introducao {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 30px 2fr;
     align-items: center;
-    gap: 20px; 
-    text-align: center;
-   
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .foto {
+    width: 100%;
+    max-width: 100%;
+    grid-column: 1;
   }
 
   .detalhe {
     display: none; 
   }
 
-  .foto {
-    width: 100%;  
-    max-width: 400px; 
-  }
-
   .texto {
-    max-width: 600px; 
+    grid-column: 3;
   }
 
   .texto h1 {
-    font-size: 2rem; 
+    font-size: 2.2rem;
     margin-bottom: 20px;
   }
 }
 
-
 @media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr 10px 1fr; 
+    gap: 10px;
+  }
+
   .texto h1 {
     font-size: 1.8rem;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 }
