@@ -1,0 +1,172 @@
+/* Estilo para a seção de Projetos */
+.projetos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.projetos h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2D0390;
+  margin-bottom: 40px;
+  background: linear-gradient(180deg, #2D0390, #9263FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Texto do GitHub */
+.github {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2D0390;
+  margin-bottom: 40px;
+  background: linear-gradient(180deg, #2D0390, #9263FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.github a {
+  text-decoration: ;
+  background: linear-gradient(180deg, #2D0390, #9263FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github a:hover {
+  text-decoration: underline;
+  font-size: 1.32rem;
+}
+
+/* Estilo dos cards */
+.projetos .card {
+  background: #EEE8FB;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(45, 3, 144, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(45, 3, 144, 0.2);
+}
+
+.projetos .card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.projetos .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projetos .card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2D0390;
+}
+
+.projetos .card-text {
+  font-size: 1rem;
+  color: #814BFF;
+  margin-bottom: 20px;
+}
+
+.projetos .btn-primary {
+  background-color: #814BFF;
+  border: none;
+  font-weight: 600;
+}
+
+.projetos .btn-primary:hover {
+  background-color: #2D0390;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 992px) {
+  .projetos h2 {
+    font-size: 3rem;
+  }
+
+  .github {
+    font-size: 1.2rem;
+  }
+
+  .projetos .card-title {
+    font-size: 1.2rem;
+  }
+
+  .projetos .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projetos h2 {
+    font-size: 2.5rem;
+  }
+
+  .github {
+    font-size: 1.1rem;
+  }
+
+  .projetos .card {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .projetos .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projetos .col-md-4 {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .projetos .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projetos h2 {
+    font-size: 2rem;
+  }
+
+  .github {
+    font-size: 1rem;
+  }
+
+  .projetos .card-title {
+    font-size: 1rem;
+  }
+
+  .projetos .card-text {
+    font-size: 0.9rem;
+  }
+
+  .projetos .btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .projetos .card-img-top {
+    height: 180px;
+  }
+}
