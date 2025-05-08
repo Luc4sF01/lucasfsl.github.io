@@ -25,13 +25,12 @@
   margin-bottom: 40px;
   background: linear-gradient(180deg, #2D0390, #9263FF);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
   text-align: center;
   padding-bottom: 30px;
 }
 
 .github a {
-  text-decoration: ;
   background: linear-gradient(180deg, #2D0390, #9263FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

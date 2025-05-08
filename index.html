@@ -187,6 +187,16 @@
               <h3 class="formacao-titulo">React</h3>
               <p class="formacao-lugar">Origamid</p>
             </div>
+            <div class="formacao-curso scroll-reveal">
+              <p class="formacao-titulo2">Curso</p>
+              <h3 class="formacao-titulo">Tailwind CSS</h3>
+              <p class="formacao-lugar">Origamid</p>
+            </div>
+            <div class="formacao-curso scroll-reveal">
+              <p class="formacao-titulo2">Curso</p>
+              <h3 class="formacao-titulo">Flex box CSS</h3>
+              <p class="formacao-lugar">Origamid</p>
+            </div>
           </div>
 
           <div class="formacao-complementares scroll-reveal">
@@ -204,7 +214,7 @@
 
     <section class="projetos scroll-reveal" id="projetos" aria-label="Projetos">
       <section id="projetos" class="container my-5">
-        <h2 class="text-center mb-2">Top 3 projetos</h2>
+        <h2 class="text-center mb-2">Projetos</h2>
         <p class="github">
           <a href="https://github.com/Luc4sF01" target="_blank"
             >Acesse meu GitHub para ver outros projetos e códigos</a
@@ -219,9 +229,7 @@
               <div class="card-body">
                 <h5 class="card-title">Pets Top</h5>
                 <p class="card-text">
-                  Site institucional desenvolvido para o Petshop PetsTop, em
-                  Guimarânia - MG, com foco em apresentação de serviços e
-                  identidade visual personalizada.
+                  Site institucional desenvolvido para o Petshop PetsTop, localizado em Guimarânia – MG. O projeto foi criado com foco na apresentação clara dos serviços oferecidos, identidade visual personalizada e navegação responsiva. Com um design leve e moderno, o site valoriza a marca local e facilita o contato com os clientes, promovendo confiança e profissionalismo.
                 </p>
                 <a
                   href="https://petstop.lucasfsl.com.br"
@@ -236,17 +244,15 @@
           <!-- Projeto 2 -->
           <div class="col-md-4">
             <div class="card" style="width: 100%">
-              <img src="./rcc.png" class="card-img-top" alt="Projeto 2" />
+              <img src="./makestore.png" class="card-img-top" alt="Projeto 3" />
               <div class="card-body">
-                <h5 class="card-title">RCC- Maria Porta do céu</h5>
+                <h5 class="card-title">Make Store</h5>
                 <p class="card-text">
-                  Website criado para o grupo de oração "Maria Porta do Céu",
-                  com informações semanais, integração com redes sociais e
-                  design inspirado na espiritualidade.
+                  Plataforma de apresentação para loja de maquiagem online, com foco em estética moderna, responsividade, experiência do usuário e funcionalidades práticas como carrinho de compras, integração com WhatsApp, sistema de categorias e navegação fluida. O projeto foi desenvolvido com HTML, Tailwind CSS e JavaScript, priorizando o design visual e a conversão de vendas.
                 </p>
 
                 <a
-                  href="https://mariaportadoceu.lucasfsl.com.br"
+                  href="https://makestore.lucasfsl.com.br"
                   class="btn btn-primary"
                   target="_blank"
                   >Ver Projeto</a
@@ -256,6 +262,26 @@
           </div>
 
           <!-- Projeto 3 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 100%">
+              <img src="./forest.png" class="card-img-top" alt="Projeto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Forest</h5>
+                <p class="card-text">
+                  Site institucional desenvolvido para um hotel ecológico, com foco em imersão na natureza e experiências ao ar livre. Criado com HTML e Tailwind CSS, o projeto destaca uma estética escura e sofisticada que remete ao ambiente da floresta, com layout responsivo, tipografia elegante e seções bem distribuídas. O objetivo é proporcionar uma navegação imersiva e transmitir a conexão do hotel com a tranquilidade e o contato direto com a natureza.
+                </p>
+
+                <a
+                  href="http://forest.lucasfsl.com.br/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 4 -->
           <div class="col-md-4">
             <div class="card" style="width: 100%">
               <img src="./bikecraft.png" class="card-img-top" alt="Projeto 3" />
@@ -269,6 +295,29 @@
 
                 <a
                   href="https://bikecraft.lucasfsl.com.br"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 5 -->
+
+          <div class="col-md-4">
+            <div class="card" style="width: 100%">
+              <img src="./rcc.png" class="card-img-top" alt="Projeto 2" />
+              <div class="card-body">
+                <h5 class="card-title">RCC- Maria Porta do céu</h5>
+                <p class="card-text">
+                  Website criado para o grupo de oração "Maria Porta do Céu",
+                  com informações semanais, integração com redes sociais e
+                  design inspirado na espiritualidade.
+                </p>
+
+                <a
+                  href="https://mariaportadoceu.lucasfsl.com.br"
                   class="btn btn-primary"
                   target="_blank"
                   >Ver Projeto</a
@@ -319,7 +368,7 @@
             timeElapsed,
             startPosition,
             distance,
-            duration
+            duration,
           );
           window.scrollTo(0, run);
           if (timeElapsed < duration) requestAnimationFrame(animation);
@@ -335,27 +384,27 @@
       }
 
       document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.addEventListener("click", function (e) {
+        link.addEventListener('click', function (e) {
           e.preventDefault();
-          const target = this.getAttribute("href");
+          const target = this.getAttribute('href');
           smoothScroll(target, 1200);
         });
       });
 
-      const observers = document.querySelectorAll(".scroll-reveal");
+      const observers = document.querySelectorAll('.scroll-reveal');
 
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add("active");
+              entry.target.classList.add('active');
               observer.unobserve(entry.target);
             }
           });
         },
         {
           threshold: 0.25,
-        }
+        },
       );
 
       observers.forEach((section) => {
